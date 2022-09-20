@@ -1,4 +1,4 @@
-const { db } = require('./util/admin');
+const { db } = require('../util/admin');
 
 exports.test = (request, response) => {
   db
@@ -22,19 +22,3 @@ exports.test = (request, response) => {
     return response.status(500).json({ error: err.code});
   });
 };
-//
-// exports.test = (request, response) => {
-//     ideas = [
-//         {
-//             'id': '1',
-//             'title': 'soldi',
-//             'body': 'gift card exchange'
-//         },
-//         {
-//             'id': '2',
-//             'title': 'prototype',
-//             'body': 'idea organization'
-//         }
-//     ]
-//     return response.json(ideas);
-// }

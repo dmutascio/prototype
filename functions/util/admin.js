@@ -1,6 +1,8 @@
 const admin = require('firebase-admin');
 
-admin.initializeApp();
+admin.initializeApp({
+  serviceAccountId: 'prototype-7e984@appspot.gserviceaccount.com',
+});
 
 const db = admin.firestore();
 
